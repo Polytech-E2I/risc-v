@@ -7,7 +7,7 @@ main:       addi a0, zero, 4
             addi zero, zero, 0
 
             # a0 <> n, a1 <> x
-puis_rec:   addi sp, sp, -4         # Stack frame : 4 for ra, 8 for x and n
+puis_rec:   addi sp, sp, -4         # Stack frame : 4 for ra
             sw   ra, 0(sp)          # Save return address
             beq  a0, zero, ret_one  # Exit condition
             addi a0, a0, -1         # n <= n-1
