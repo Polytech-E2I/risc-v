@@ -1,5 +1,5 @@
             ### TEST VALUES ###
-            addi a0, zero, 4
+main:       addi a0, zero, 4
             addi a1, zero, 3
             ### FUNCTION TO TEST ###
             jal  ra, puis_ite
